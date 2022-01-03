@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./../assets/vendors/fontawesome/js/all.min.js"></script>
+  </head>
+  <body class="m-0 p-0">
+
+      <div class="container-fluid m-0 p-0">
+        <div class="container np-navbar">
+          <img src="./../assets//images/background-navbar.svg" 
+            class="np-image-navbar">
+
+          <ul class="np-navbar-menu">
+            <li class="np-list-navbar-menu"><a href="#about">About</a></li>
+            <li class="np-list-navbar-menu"><a href="#skill">Skill</a></li>
+            <li class="np-list-navbar-menu"><a href="#portfolio">Portfolio</a></li>
+            <li class="np-list-navbar-menu"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>        
+      </div>
+
+      <div class="container d-flex flex-row justify-content-between" 
+        id="about">
+        <div>
+          <img src="./../assets//images/my.svg" 
+            style="height:400px">
+        </div>
+        <div class="mt-5">
+          <div class="text-center"><h3>About</h3></div>
+          <p>
+            Hello There i'am Toni Widodo Web programmer
+          </p>
+
+          <p>
+            i'am come from indonesia
+          </p>
+          <p>
+            i have experince in web programming at least more than 2 years
+          </p>
+
+          <p>
+            i usually using laravel framework due to finish my project 
+          </p>
+        </div>
+      </div>
+      
+      <div class="container-fluid m-0 p-0"
+        style="height:1000px" id="skill">
+          <div class="container p-0" style="position: relative;height:500px;max-width:2000px">
+            <img src="./../assets//images/background-skill.svg" 
+              style="width:100%">
+            <div style="position: absolute;color:white;top:100px;width:100%">
+              <div style="width:60%;margin:auto">
+                <div class="text-center"><h3>Skill</h3></div>
+
+                <div class="row">
+                  <div class="col-4 text-center mb-5 mt-5">
+                    <p><i class="fab fa-html5 fa-7x"></i></p>
+                    HTML
+                  </div>
+                  <div class="col-4 text-center mb-5 mt-5">
+                    <p><i class="fab fa-css3 fa-7x"></i></p>
+                    CSS
+                  </div>
+                  <div class="col-4 text-center mb-5 mt-5">
+                    <p><i class="fab fa-php fa-7x"></i></p>
+                    PHP
+                  </div>
+                  <div class="col-4 text-center mb-5 mt-5 m-auto">
+                    <p><i class="fab fa-js fa-7x"></i></p>
+                    JS
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="container" id="portfolio">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col shadow">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col shadow">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col shadow">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container-fluid m-0 p-0" id="contact">
+          <div class="container p-0" style="position: relative;height:500px;max-width:2000px">
+            <img src="./../assets//images/background-contact.svg" 
+              style="width:100%">
+          </div>
+        </div>      
+
+<button onclick="topFunction()" id="np-btn" title="Go to top">
+  <i class="fa fa-caret-up fa-2x"></i>
+</button>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("np-btn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  </body>
+</html>
