@@ -39,67 +39,79 @@
         </div>        
       </div>
 
-      <style>
-        #np-menu{
-          min-height: 200px;
-        }
-
-        .np-navbar{
-            position    : relative;
-            max-width   : 2000px;
-            font-size   : 14px;
-            height      : 150px;
-            padding     : 0px
-        }
-
-        .np-navbar:after {
-            content     : '';
-            display     : block;
+      <!-- DEKSTOP ONLY -->
+      <style>      
+        @media (min-width: 1025px) {
+          #np-menu{
+            min-height: 200px;
           }
 
-        .np-image-navbar{
-            position    : absolute;
-            right       : 0px;
-            top         : 0px
-        }
+          .np-navbar{
+              position    : relative;
+              max-width   : 2000%;
+              font-size   : 14px;
+              height      : 150px;
+              padding     : 0px
+          }
 
-        .np-navbar-menu{
-            position    : absolute;
-            top:20px;
-            right:80px;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+          .np-navbar:after {
+              content     : '';
+              display     : block;
+            }
 
-        .np-list-navbar-menu{
-            float: left;
-            min-width: 120px;
-            text-align:center;
-            font-weight: 300px;
-            color:white;
-        }
+          .np-image-navbar{
+              position    : absolute;
+              right       : 0px;
+              top         : 0px
+          }
 
-        .np-list-navbar-menu > a{
-            display: block;
-            width:90px;
-            text-decoration: none;
-            color:white;
-            border-bottom:1.5px solid white;
-            padding-bottom: 5px;
-            padding-top: 5px;
-            transition: backgroud 1s,color 1s, border 1s;
-        }
+          .np-navbar-menu{
+              position    : absolute;
+              top:20px;
+              right:80px;
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+          }
 
-        .np-list-navbar-menu > a.active{
-            border-bottom:2px solid none;
-        }
+          .np-list-navbar-menu{
+              float: left;
+              min-width: 120px;
+              text-align:center;
+              font-weight: 300px;
+              color:white;
+          }
 
-        .np-list-navbar-menu > a:hover{
-            background-color: white;
-            color : black;
-            border-bottom:2px solid none;
+          .np-list-navbar-menu > a{
+              display: block;
+              width:90px;
+              text-decoration: none;
+              color:white;
+              border-bottom:1.5px solid white;
+              padding-bottom: 5px;
+              padding-top: 5px;
+              transition: backgroud 1s,color 1s, border 1s;
+          }
+
+          .np-list-navbar-menu > a.active{
+              border-bottom:2px solid none;
+          }
+
+          .np-list-navbar-menu > a:hover{
+              background-color: white;
+              color : black;
+              border-bottom:2px solid none;
+          }
+        }      
+      </style>
+
+      <!-- MOBILE ONLY -->
+      <style>
+        @media (min-width: 0px) and (max-width: 1024px) {
+          #np-menu{
+            display: none;
+          }
         }
       </style>
       <!-- MENU -->
@@ -122,12 +134,25 @@
         </div>
       </div>
 
+      <!-- DEKSTOP ONLY -->
       <style>
-        #np-about{
-          min-height:600px;
+        @media (min-width: 1025px) {
+          #np-about{
+            min-height:600px;
+          }
         }
       </style>
       <!-- ABOUT -->
+
+      <!-- MOBILE ONLY -->
+      <style>
+        @media (min-width: 0px) and (max-width: 1024px) {
+          #np-about{
+            display: none !important;
+          }
+        }
+      </style>
+      <!-- MENU -->
       
       <!-- SKILL -->
       <div class="container-fluid m-0 p-0"
@@ -168,29 +193,41 @@
             </div>
         </div>
       </div>
+      <!-- DEKSTOP ONLY -->
       <style>
-        #np-skill{
-          min-height : 900px
-        }
+        @media (min-width: 1025px) {
+          #np-skill{
+            min-height : 900px
+          }
 
-        .np-container-skill{
-          position  : relative;
-          height    : 500px;
-          max-width : 2000px
-        }
+          .np-container-skill{
+            position  : relative;
+            height    : 500px;
+            max-width : 2000%
+          }
 
-        .np-content-skill{
-          position  : absolute;
-          color     :white;
-          top       : 100px;
-          width     : 100%
-        }
+          .np-content-skill{
+            position  : absolute;
+            color     :white;
+            top       : 100px;
+            width     : 100%
+          }
 
-        .np-inner-content-skill{
-          width     : 60%;
-          margin    : auto;
+          .np-inner-content-skill{
+            width     : 60%;
+            margin    : auto;
+          }
         }
       </style>
+
+      <!-- MOBILE ONLY -->
+      <style>
+        @media (min-width: 0px) and (max-width: 1024px) {
+          #np-skill{
+            display: none;
+          }
+        }
+      </style>    
       <!-- SKILL -->
 
       <!-- PORTFOLIO -->
@@ -277,11 +314,23 @@
           </div>
         </div>
       </div>
+      <!-- DEKSTOP ONLY -->
       <style>
-        #np-portfolio{
-          min-height: 750px;
+        @media (min-width: 1025px) {
+          #np-portfolio{
+            margin-top: 10%;
+            min-height: 750px;
+          }
         }
       </style>
+      <!-- MOBILE ONLY -->
+      <style>
+        @media (min-width: 0px) and (max-width: 1024px) {
+          #np-portfolio{
+            display: none;
+          }
+        }
+      </style>    
       <!-- PORTFOLIO -->
 
       <!-- CONTACT -->
@@ -305,20 +354,31 @@
             </div>
         </div>
       </div>     
+      <!-- DEKSTOP ONLY -->
       <style>      
-        .np-container-contact{
-          position    : relative;
-          height      : 450px;
-          max-width   : 2000px
-        }
+        @media (min-width: 1025px) {
+          .np-container-contact{
+            position    : relative;
+            height      : 450px;
+            max-width   : 2000%
+          }
 
-        .np-content-contact{
-          position    : absolute;
-          top         : 130px;
-          left        : 50px;
-          color       :white;
+          .np-content-contact{
+            position    : absolute;
+            top         : 130px;
+            left        : 50px;
+            color       :white;
+          }
         }
       </style> 
+      <!-- MOBILE ONLY -->
+      <style>
+        @media (min-width: 0px) and (max-width: 1024px) {
+          #np-contact{
+            display: none;
+          }
+        }
+      </style>    
       <!-- CONTACT -->
 
       <button onclick="topFunction()" 
