@@ -9,7 +9,7 @@
 
       <!-- MENU -->
       <div class="container-fluid m-0 p-0"      
-        id="np-menu">
+        id="np-menu-dekstop">
         <div class="container np-navbar">
           <img src="./../assets//images/background-navbar.svg" 
             class="np-image-navbar">
@@ -39,10 +39,19 @@
         </div>        
       </div>
 
+      <!-- BEYOND DEKSTOP -->
+      <style>
+        @media(min-width: 1948px){
+          #np-menu-dekstop{
+            display: none;
+          }
+        }
+      </style>
+
       <!-- DEKSTOP ONLY -->
       <style>      
         @media (min-width: 1025px) {
-          #np-menu{
+          #np-menu-dekstop{
             min-height: 200px;
           }
 
@@ -109,7 +118,7 @@
       <!-- MOBILE ONLY -->
       <style>
         @media (min-width: 0px) and (max-width: 1024px) {
-          #np-menu{
+          #np-menu-dekstop{
             display: none;
           }
         }
@@ -118,7 +127,7 @@
 
       <!-- ABOUT -->
       <div class="container d-flex flex-row justify-content-between" 
-        id="np-about">
+        id="np-about-dekstop">
         <div>
           <img src="./../assets//images/my.svg" 
             style="height:450px">
@@ -134,10 +143,19 @@
         </div>
       </div>
 
+      <!-- BEYOND DEKSTOP -->
+      <style>
+        @media(min-width: 1948px){
+          #np-about-dekstop{
+            display: none !important;
+          }
+        }
+      </style>
+
       <!-- DEKSTOP ONLY -->
       <style>
         @media (min-width: 1025px) {
-          #np-about{
+          #np-about-dekstop{
             min-height:600px;
           }
         }
@@ -147,7 +165,7 @@
       <!-- MOBILE ONLY -->
       <style>
         @media (min-width: 0px) and (max-width: 1024px) {
-          #np-about{
+          #np-about-dekstop{
             display: none !important;
           }
         }
@@ -156,7 +174,7 @@
       
       <!-- SKILL -->
       <div class="container-fluid m-0 p-0"
-        id="np-skill">
+        id="np-skill-dekstop">
           <div class="container p-0 np-container-skill">
             <img src="./../assets//images/background-skill.svg" 
               style="width:100%"
@@ -193,10 +211,20 @@
             </div>
         </div>
       </div>
+
+      <!-- BEYOND DEKSTOP -->
+      <style>
+        @media(min-width: 1948px){
+          #np-skill-dekstop{
+            display: none;
+          }
+        }
+      </style>
+
       <!-- DEKSTOP ONLY -->
       <style>
         @media (min-width: 1025px) {
-          #np-skill{
+          #np-skill-dekstop{
             min-height : 900px
           }
 
@@ -223,7 +251,7 @@
       <!-- MOBILE ONLY -->
       <style>
         @media (min-width: 0px) and (max-width: 1024px) {
-          #np-skill{
+          #np-skill-dekstop{
             display: none;
           }
         }
@@ -232,7 +260,7 @@
 
       <!-- PORTFOLIO -->
       <div class="container" 
-        id="np-portfolio">
+        id="np-portfolio-dekstop">
         <div class="text-center mb-5"
           data-aos="fade-up" 
           data-aos-anchor-placement="top-center">   
@@ -242,7 +270,7 @@
         <div class="row"
           data-aos="fade-up" 
           data-aos-anchor-placement="top-center">   
-          <div class="col">
+          <div class="col mt-2">
             <div class="card" style="width: 21rem">
               <a href="https://github.com/litondev/php-native-ejournal"
                 target="_blank">
@@ -266,7 +294,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col mt-2">
             <div class="card" style="width: 21rem">
               <a href="https://github.com/litondev/php-native-simpus-mvc" 
                 target="_blank"><img src="./../assets/images/portfolio/perpus/1.png" 
@@ -289,7 +317,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col mt-2">
             <div class="card" style="width: 21rem">
               <a href="https://github.com/litondev/project-articel" 
                 target="_blank">
@@ -314,19 +342,30 @@
           </div>
         </div>
       </div>
+
+      <!-- BEYOND DEKSTOP -->
+      <style>
+        @media(min-width: 1948px){
+          #np-portfolio-dekstop{
+            display: none;
+          }
+        }
+      </style>
+
       <!-- DEKSTOP ONLY -->
       <style>
         @media (min-width: 1025px) {
-          #np-portfolio{
+          #np-portfolio-dekstop{
             margin-top: 10%;
             min-height: 750px;
           }
         }
       </style>
+
       <!-- MOBILE ONLY -->
       <style>
         @media (min-width: 0px) and (max-width: 1024px) {
-          #np-portfolio{
+          #np-portfolio-dekstop{
             display: none;
           }
         }
@@ -335,7 +374,7 @@
 
       <!-- CONTACT -->
       <div class="container-fluid m-0 p-0" 
-        id="np-contact">
+        id="np-contact-dekstop">
         <div class="container p-0 np-container-contact">
             <img src="./../assets/images/background-contact.svg" 
               style="width:100%"
@@ -354,6 +393,16 @@
             </div>
         </div>
       </div>     
+
+      <!-- BEYOND DEKSTOP -->
+      <style>
+        @media(min-width: 1948px){
+          #np-contact-dekstop{
+            display: none;
+          }
+        }
+      </style>
+
       <!-- DEKSTOP ONLY -->
       <style>      
         @media (min-width: 1025px) {
@@ -371,10 +420,11 @@
           }
         }
       </style> 
+
       <!-- MOBILE ONLY -->
       <style>
         @media (min-width: 0px) and (max-width: 1024px) {
-          #np-contact{
+          #np-contact-dekstop{
             display: none;
           }
         }
@@ -431,6 +481,12 @@
         function topFunction() {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
+        }
+
+        window.onresize = function(){
+          if(screen.width >= 1949){
+            alert("Website Not Support Your Monitor");
+          }
         }
       </script>
   </body>
